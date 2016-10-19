@@ -1,9 +1,10 @@
 # Shortest-Path-
 This program finds the shortest path using Dijkstra’s algorithm for adjacency matrix, Dijkstra’s algorithm for adjacency list, Bellman-Ford algorithm and parallel Dijkstra’s algorithm.
 
-You may compile according to the directions below.
+The command 'make all' will compile the entire project. You may also compile and run the project according to the directions below.
 
 ---sptest---
+
 To compile: make sptest
 To run: ./sptest <a graph file name> <source vertex name> <destination vertex name> <number of threads> <number of threads> 
 Description:
