@@ -9,13 +9,4 @@ shortestPath.o: shortestPath.cc shortestPath.h BinaryHeap.o
 BinaryHeap.o: BinaryHeap.cc BinaryHeap.h
 	g++ ${OPTS} -c BinaryHeap.cc
 
-currency: currency.cc shortestPath.o 
-	g++ ${OPTS} -o currency currency.cc shortestPath.o BinaryHeap.o
-
-suggestwords: suggestwords.cc
-	g++ ${OPTS} -o suggestwords suggestwords.cc
-
-mapqueue: mapqueue.cc
-	g++ ${OPTS} -pthread -o mapqueue mapqueue.cc
-
-all: sptest currency suggestwords mapqueue
+all: sptest
